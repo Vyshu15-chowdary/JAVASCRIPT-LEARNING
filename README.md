@@ -34,3 +34,7 @@ Mdn web docs - reference for j.s
 2009  Es5
 2015  Es6
 
+# objects
+
+Global object : window , this
+
