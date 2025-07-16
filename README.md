@@ -20,3 +20,17 @@ it occurs line by line at runtime and executes immediately.It is slow compared t
 
 # j.s uses interpreter
 
+In j.s 99% objectives and 1% primitive
+
+Mdn web docs - reference for j.s
+
+# HISTORY OF J.S
+
+1995  j.s
+1997  Es1
+1998  Es2
+1999  Es3
+2000  Not released
+2009  Es5
+2015  Es6
+
