@@ -72,3 +72,22 @@ console.log(typeof undefined); //undefined
 //ternary operator
 
 y = (2 > 5) ? console.log("true"): console.log("false");
+
+//loose equal
+//it checks value and automatically typeconversion takes place
+
+console.log(1 ==1);
+console.log(2 == "two");
+console.log (0 == false);
+
+//strict equal (===)
+
+console.log("1"=== 1);
+console.log("hi"=="hello"); //type same but value not same
+console.log( false === false);
+
+//dom
+
+var one = document.getElementById("one");
+one.innerHTML = "goodbye world"
+
