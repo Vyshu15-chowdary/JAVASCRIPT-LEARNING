@@ -94,3 +94,7 @@ var one = document.getElementById("one");
 let contents = one.innerHTML;
 console.log(contents);
 
+//changing the contents of div
+one.innerHTML = "<b>This is new content</b>"
+
+
