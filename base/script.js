@@ -69,3 +69,6 @@ console.log(typeof undefined); //undefined
      }else{
         console.log("x is equal to zero");
      }
+//ternary operator
+
+y = (2 > 5) ? console.log("true"): console.log("false");
