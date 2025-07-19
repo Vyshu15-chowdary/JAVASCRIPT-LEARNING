@@ -103,3 +103,7 @@ let myImage =document.getElementById("myImage");
 let srcValue = myImage.getAttribute("src");
 console.log(srcValue);
 
+//change artibute
+myImage.setAttribute("src","img.png");
+
+
