@@ -19,7 +19,7 @@ comment*/
 
 //statement
 
-let x = 30;
+var x = 30;
 
 if(x<20){
 
@@ -57,3 +57,15 @@ console.log(typeof []); //object
 console.log(typeof function(){});
 console.log(typeof null); // object
 console.log(typeof undefined); //undefined
+
+//if-else
+
+     x = -2;
+
+     if (x >= 10){
+        console.log("x is greater than 10");
+     }else if (x < 0){
+        console.log("x is less than 0 and =10")
+     }else{
+        console.log("x is equal to zero");
+     }
