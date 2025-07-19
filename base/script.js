@@ -97,4 +97,9 @@ console.log(contents);
 //changing the contents of div
 one.innerHTML = "<b>This is new content</b>"
 
+//attribute
+
+let myImage =document.getElementById("myImage");
+let srcValue = myImage.getAttribute("src");
+console.log(srcValue);
 
