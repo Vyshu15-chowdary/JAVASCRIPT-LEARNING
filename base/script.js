@@ -89,5 +89,8 @@ console.log( false === false);
 //dom
 
 var one = document.getElementById("one");
-one.innerHTML = "goodbye world"
+
+// displaying the content inside the div
+let contents = one.innerHTML;
+console.log(contents);
 
