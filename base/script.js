@@ -28,3 +28,21 @@ if(x<20){
 }else{
     console.log("good night");
 }
+
+//use strictmode
+
+
+//if one statement throws error the remaining code will not execute
+
+/*
+ let y;
+console.log(y);
+*/
+//with out strict it will work and not give error
+
+ let Z = 20;
+ console.log(Z);
+
+function z(p1,p2){
+    console.log(p2);
+}
