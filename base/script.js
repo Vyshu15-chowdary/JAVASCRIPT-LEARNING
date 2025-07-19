@@ -16,3 +16,15 @@ function Sum (a,b){
 /*multi
 line 
 comment*/
+
+//statement
+
+let x = 30;
+
+if(x<20){
+
+    console.log("good evening");
+    console.log("dear");
+}else{
+    console.log("good night");
+}
