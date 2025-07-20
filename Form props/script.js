@@ -18,3 +18,15 @@ document.querySelectorAll('.item').forEach(item =>{
         console.log(`clicked ${event.target.textContent}`);
     });
 });
+
+//navigation
+
+const childNode = document.getElementById("child");
+const parentNode = childNode.parentNode;
+console.log(parentNode);
+
+//childnodes
+
+const parent = document.querySelector("div");
+const children = parent.childNodes;
+console.log(children);
