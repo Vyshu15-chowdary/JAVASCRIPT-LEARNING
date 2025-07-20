@@ -30,3 +30,11 @@ console.log(parentNode);
 const parent = document.querySelector("div");
 const children = parent.childNodes;
 console.log(children);
+
+//dom nodes
+const newDiv = document.createElement("div");
+const newText = document.createTextNode("new text added");
+
+const container =document.getElementById("container");
+container.append(newDiv);
+container.appendChild(newText);
