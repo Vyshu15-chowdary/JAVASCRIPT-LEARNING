@@ -6,17 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-   <form>
+   <form onsubmit ="alert('Form Submitted')">
     <input type="text" name="name" max="100" value="vyshnavi"disabled />
     <input type="number" name ="age" min="18"placeholder="age"/>
     <input type="email" name="email" required/>
     <input type="text" name="zipcode" pattern="[0-9]{5}" placeholder="Enter your zipcode"/>
     <input type ="text" onchange ="alert(this.value)">
+   
    </form>
-   <button onclick="alert('HELLO WORLD!')">
+   <button id="button" >
     Click me!
 
    </button>
+
+   
     
     <script src = "script.js"></script>
     
