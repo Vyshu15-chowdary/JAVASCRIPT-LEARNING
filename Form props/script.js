@@ -143,3 +143,24 @@ function innerFunction(){
 }
 
 outerFunction();
+
+//function as value
+
+let net=function(){
+    console.log("this is my function")
+};
+
+function callFunction(func){
+    func ();
+}
+callFunction(net);
+
+//return function
+
+function returnFunction(){
+    return function(){
+        console.log("this function is returned")
+    }
+}
+let returnedFunction = returnFunction();
+returnedFunction();
