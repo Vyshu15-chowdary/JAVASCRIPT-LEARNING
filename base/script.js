@@ -106,4 +106,9 @@ console.log(srcValue);
 //change artibute
 myImage.setAttribute("src","img.png");
 
+//style property
+let bgcolor = one.style.backgroundColor;
+console.log(bgcolor);
+//we can change color
+one.style.backgroundColor = "orange";
 
