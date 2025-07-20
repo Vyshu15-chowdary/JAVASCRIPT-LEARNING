@@ -95,3 +95,29 @@ switch(day){
         default:
             console.log("Happy weekend");            
 }
+
+//function
+
+function greet(){
+    console.log("goodmorning friends")
+}
+
+greet();
+
+//set of parameters
+
+function Sum  (a,b){
+    return a+b;
+}
+let result = Sum (3,4);
+
+//anonymous function
+
+let myFunction = function(){
+    console.log("hello gooogle");
+}
+myFunction();
+
+setTimeout(function(){
+    console.log("hello world")
+},5000);
