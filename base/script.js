@@ -107,8 +107,16 @@ console.log(srcValue);
 myImage.setAttribute("src","img.png");
 
 //style property
+// acessing from css
+// let one = document.getElementbyId("one");
 let bgcolor = one.style.backgroundColor;
 console.log(bgcolor);
 //we can change color
 one.style.backgroundColor = "orange";
+
+//text content
+//displaying the content
+let myPara = document.getElementById("mypara");
+let Contents = myPara.textContent;
+console.log(Contents);
 
