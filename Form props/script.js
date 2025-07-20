@@ -121,3 +121,25 @@ myFunction();
 setTimeout(function(){
     console.log("hello world")
 },5000);
+
+//invoking /calling
+
+function hello(a,b){
+   // console.log("succesfully executed");
+   console.log( z = a+b);
+}
+//hello(2,3);
+//hello.call(thisValue,2);
+
+//function calling from otherfunction
+
+function outerFunction(){
+    console.log("outer function");
+    innerFunction();
+}
+
+function innerFunction(){
+    console.log("inner function")
+}
+
+outerFunction();
