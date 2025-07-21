@@ -48,7 +48,7 @@ console.log(counter());
 console.log(counter());
 
 //HIGHER ORDER FUNCTIONS
-
+/*
 function add(x,y){
     return x+y;
 }
@@ -59,3 +59,12 @@ function operateOnTwoNumbers(operatorFunc,x,y){
     return operatorFunc(x,y);
 }
 console.log(operateOnTwoNumbers(add,2,3));
+*/
+// call back function
+function add (x,y){
+    return x+y;
+}
+function operateOnTwoNumbers(x,y,callback){
+    return callback(x,y);
+}
+console.log(operateOnTwoNumbers(5,6,add));
