@@ -58,3 +58,12 @@ let person = {
 
 let getPersonName = person.getFullName.bind(person);
 console.log(getPersonName());
+
+//IIFE
+
+(
+    function(){
+        let message ="iife";
+        console.log(message);
+    }
+)();
