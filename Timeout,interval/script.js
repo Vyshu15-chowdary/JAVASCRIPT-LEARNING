@@ -21,3 +21,13 @@ const TimeoutId = setTimeout(function(){
 },5000);
 
 clearTimeout(TimeoutId);
+
+//setinterval
+
+let count =0;
+function incrementCount(){
+    count--
+    console.log(count);
+}
+
+setInterval(incrementCount,1000);
