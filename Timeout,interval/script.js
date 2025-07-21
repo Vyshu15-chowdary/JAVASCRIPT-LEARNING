@@ -25,9 +25,22 @@ clearTimeout(TimeoutId);
 //setinterval
 
 let count =0;
-function incrementCount(){
+ function incrementCount(){
     count--
     console.log(count);
 }
 
-setInterval(incrementCount,1000);
+setInterval(incrementCount,5000);
+
+
+// call and apply methods
+
+function otP(name,num){
+    console.log(`Hello ${name},you are OTP ${num}`);
+}
+otP.call(null,"vyshu",5682);
+
+function hello(name,age){
+    console.log(`hello ${name},your age is ${age}`);
+}
+hello.apply(null,["vyshu",23]);
