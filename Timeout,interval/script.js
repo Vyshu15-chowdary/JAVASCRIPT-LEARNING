@@ -1,18 +1,18 @@
 //set timeout
 //after a specific time it execute
 
-/*
+
 function sayHello(){
     console.log("hello vyshnavi");
 }
 setTimeout(sayHello,2000);
-*/
 
-/*
+
+
 setTimeout(function(){
     console.log("anonymous function as callback")
 },2000);
-*/
+
 
 //clearTimeout
 
@@ -24,7 +24,7 @@ clearTimeout(TimeoutId);
 
 //setinterval
 
-/*
+
 let count =0;
  function incrementCount(){
     count--
@@ -32,7 +32,7 @@ let count =0;
 }
 
 setInterval(incrementCount,5000);
-*/
+
 
 // call and apply methods
 
@@ -67,3 +67,26 @@ console.log(getPersonName());
         console.log(message);
     }
 )();
+
+//clousure
+
+function doCounter(){
+    let count = 0;
+    return function(){
+        return count++;
+    }
+}
+
+let counter = doCounter();
+console.log(counter());
+console.log(counter());
+
+function outerFunction(x){
+    return function innerFunction(y){
+        return x+y;
+    }
+}
+
+var add = outerFunction(5);
+console.log(add(5));
+console.log(add(10));
