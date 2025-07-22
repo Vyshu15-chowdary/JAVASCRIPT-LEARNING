@@ -21,3 +21,26 @@ console.log(seconds);
 var currentDate = new Date();
 var currentYear = currentDate.getFullYear();
 console.log(currentYear);
+
+//Operations with dates
+
+let date1 = new Date('2022-01-01');
+let date2 = new Date('2022-01-02');
+if (date1 < date2) {
+  console.log('date1 is before date2');
+} else {
+  console.log('date1 is after date2');
+}
+
+//adding and subtracting time
+
+var date = new Date();
+ let SetDate = date.setDate(date.getDate()+1);
+ console.log(SetDate);
+
+ //local date and time
+ var date = new Date();
+ let dateString = date.toLocaleString();
+ console.log(dateString);
+ let Month = date.getMonth();
+ console.log(Month);
