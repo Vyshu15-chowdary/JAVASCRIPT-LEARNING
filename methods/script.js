@@ -26,3 +26,11 @@ console.log(num % 1 !== 0); //float point doesn't give remainder zero
 
 console.log(parseInt("hello world"));
 console.log(Infinity + 1);
+
+ console.log(Math.round(4.6)); //returns nearest number
+ console.log(Math.floor(4.8)); // gives down to the nearest number
+ console.log(Math.ceil(3.289)); // up to the nearest number
+ console.log(Math.trunc(5.7)); // returns integer part
+ 
+ var x = 67.873492
+ console.log(x.toFixed(4)); // we fix no.of digits after a point
