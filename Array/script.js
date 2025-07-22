@@ -120,3 +120,52 @@ let myPara = document.getElementById("mypara");
 let Contents = myPara.textContent;
 console.log(Contents);
 
+
+//SETS
+/*
+ unlike arrays sets are not order and doesn't have indexes
+
+*/
+
+//creation of set
+
+/*
+const mySet = new Set([1,2,3,4,5]);
+console.log(mySet); 
+
+*/
+
+const mySet = new Set();
+
+mySet.add("A");
+mySet.add("B");
+mySet.add(1);
+console.log(mySet);
+console.log(mySet.size);
+console.log(mySet.has("B")); //true
+console.log(mySet.delete(1));
+console.log(mySet);//A,B
+
+//indexof
+
+const Two = ['vyshu','ruchi','amrin'];
+const index = Two.indexOf("ruchi");
+console.log(index);
+
+// print set of values
+
+const SetValues = new Set([11,12,13]);
+for(let value of SetValues){
+    console.log(value);
+}
+
+//convert set to array
+const Mset = new Set(['a','b','c','hurray']); //{}
+const Marr = [...Mset];
+console.log(Marr);//[]
+
+//alternate way
+
+const Nset = new Set(['apple','banana','orange'])
+const Narr = Array.from(Nset);
+console.log(Narr);
