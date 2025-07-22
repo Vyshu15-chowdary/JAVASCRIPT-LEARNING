@@ -1,87 +1,71 @@
-//empty array
+const MyMap = new Map([
+    [1,'vyshu'],
+    [2,'mern'],
+    [3,'value3']
+]);
+console.log(MyMap);
+MyMap.set(4,'developer');
+console.log(MyMap);
+MyMap.get('vyshu'
+);
+console.log(MyMap);
 
-let myArray = [];
-console.log(myArray); // Array(0)
-
-//with values
-
-let Array2 = [1,2,3,"hello",true];
-console.log(Array2);
-
-//looping array
-
-var arr = [1,2,3,4,5];
-
-for (let i =0;i < arr.length; i++){
-    console.log(arr[i]);
-}
-
-//for each
-
-var arr = [1,2,3,4,5];
-
-arr.forEach(function(item){
-    console.log(item + 10);
-});
-
-//push
- var arr = [1,2,3]
- var push = arr.push(6,7);
- console.log(push);
-//pop
-
-let fruits = ['apple','banana','orange'];
-let finalFruits = fruits.pop();
-console.log(fruits);// removes orange
-
-//unshift - adds begining of array
-
-let unshift = fruits.unshift('watermelon','papaya');
-console.log(fruits); // added to the list
-
-//shift - removes first element
-
-let shiftedFruits = fruits.shift();
-console.log(fruits); //['papaya', 'apple', 'banana']
-
-//join()
-
-const myString = fruits.join();
-console.log(myString); //papaya,apple,banana
-
-//concat()
-
- var newFruits = fruits.concat('grapes','mango');
- console.log(newFruits); //['papaya', 'apple', 'banana', 'grapes', 'mango']
-
- // splice () -- extracts and returns a new array
-var slice = fruits.slice(0,2); 
-console.log(slice);
-console.log(fruits);
-
-//sort
-
-const numbers = [50,30,20,10,60,80,100,90];
-numbers.sort();
-
-const ascending = (a,b) => a-b;
-console.log(numbers.sort(ascending));
-
-const Decending = (a,b) => b-a;
-console.log(numbers.sort(Decending));
-
-//reduce function
+//Map has a function
 
 const Numbers = [1,2,3,4,5];
-const sum = Numbers.reduce((accumlator,currentValue)=>{
-    return accumlator + currentValue;
-},0); // accum value is 0
-console.log(sum);//added all numbers in a list
+const doubledNumbers = Numbers.map(function(num){
+    return num*2;
+});
+console.log(doubledNumbers);
 
-//find function
+const myMap = new Map();
 
-var arr = [2,5,8,10];
+const myArray = [1, 2, 3];
 
-const evenIndex = arr.findIndex((element)=> element % 2 === 0
-);
-console.log(evenIndex); //0 index
+myMap.set(myArray, 'Hello World!');
+
+console.log(myMap.get(myArray)); // Output: "Hello World!"
+
+//iteration of map
+
+let aMap = new Map();
+aMap.set(0,'zero');
+aMap.set(1,'one');
+
+aMap.forEach(function(value,key){
+    console.log(key + ' = ' + value);
+});
+
+//for of
+let bMap = new Map();
+bMap.set(0,'zero');
+bMap.set(1,'one');
+
+for(let [key,value] of bMap){
+    console.log(key + " => " + value);
+
+}
+
+//entries method
+
+let eMap = new Map();
+eMap.set(0,'zero');
+eMap.set(1,'one');
+
+let entries= eMap.entries();
+for(let entry of entries){
+    console.log(entry[0] + ' = ' + entry[1]);
+}
+
+//obj to map
+
+const obj = {zoo:'animal',muse:'thing'};
+const oMap = new Map(Object.entries(obj));
+console.log(obj);
+
+//for each
+const numbers = [1, 2, 3, 4, 5];
+
+const doubleNumbers = numbers.map(num => num * 2);
+
+doubleNumbers.forEach(num => console.log(num));
