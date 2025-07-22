@@ -77,3 +77,11 @@ const sum = Numbers.reduce((accumlator,currentValue)=>{
     return accumlator + currentValue;
 },0); // accum value is 0
 console.log(sum);//added all numbers in a list
+
+//find function
+
+var arr = [2,5,8,10];
+
+const evenIndex = arr.findIndex((element)=> element % 2 === 0
+);
+console.log(evenIndex); //0 index
