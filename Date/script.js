@@ -44,3 +44,20 @@ var date = new Date();
  console.log(dateString);
  let Month = date.getMonth();
  console.log(Month);
+
+ // date setter methods
+var date = new Date();
+ var Year = date.setFullYear(2025);
+ console.log(Year);
+//set 
+ var date = new Date();
+ var setDate = date.setDate(15);
+console.log(setDate);
+
+//setDay
+var date = new Date();
+var setMonth = date.setMonth(5);
+console.log(setMonth);
+var Hours = date.setHours(14);
+console.log(Hours);
+
