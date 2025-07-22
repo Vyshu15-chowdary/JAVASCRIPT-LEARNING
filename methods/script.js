@@ -34,3 +34,8 @@ console.log(Infinity + 1);
  
  var x = 67.873492
  console.log(x.toFixed(4)); // we fix no.of digits after a point
+
+ //bigint
+ var x = 123456789012345678901234567890n;
+var y = BigInt("987654321098765432109876543210");
+console.log(y);
