@@ -1,39 +1,23 @@
- 
- 
- console.log(x); //x is not defined
- var x=5;
- console.log(x);
- 
+var currentDate = new Date();
+let timestamp = currentDate.getTime();
 
- console.log(x);
- let x;//error:cannot acess before intialization
+console.log(currentDate);
+console.log(timestamp);
 
- foo();
- function foo(){
-    console.log("iam a hoisted function")
- }
+var specificDate = new Date ('06/15/2002 02:45:30');
+console.log(specificDate);
 
- //we an declare var and function at top of scope
+var specificDate = new Date(Date.parse('03/31/2025'));
+console.log(specificDate);
 
- 
- var y = "helllo";
- if (y!=="hello"){
-    console.warn("x is not equal to hello");
+//calculations
 
- }
-    
+let milliseconds = 5000;
+let seconds = milliseconds / 1000;
+console.log(seconds);
 
- var z = undefined;
- if(z === undefined){
-    console.error("z is not defined");
- }
-    
+// get current year
 
- var users = [
-    {name:"vyshu",age:23,city:"nellore"},
-    {name:"ruchi",age:21,city:"thirupathi"},
-    {name:"teju",age:20,city:"sulurpeta"},
-    {name:"meghana",age:22,city:"podalakur"}
- ];
-
- console.table(users);
+var currentDate = new Date();
+var currentYear = currentDate.getFullYear();
+console.log(currentYear);
