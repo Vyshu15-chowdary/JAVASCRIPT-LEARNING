@@ -69,3 +69,11 @@ console.log(numbers.sort(ascending));
 
 const Decending = (a,b) => b-a;
 console.log(numbers.sort(Decending));
+
+//reduce function
+
+const Numbers = [1,2,3,4,5];
+const sum = Numbers.reduce((accumlator,currentValue)=>{
+    return accumlator + currentValue;
+},0); // accum value is 0
+console.log(sum);//added all numbers in a list
