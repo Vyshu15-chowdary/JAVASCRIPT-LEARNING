@@ -47,3 +47,16 @@ function objValues(){
 var result = objValues();
 console.log(result.a);
 console.log(result.b);
+
+//using destructuring
+
+function deValues(){
+    var x = 60;
+    var y = 70;
+
+    return[x,y]
+}
+
+var [p,q] = deValues();
+console.log(p);
+console.log(q);
