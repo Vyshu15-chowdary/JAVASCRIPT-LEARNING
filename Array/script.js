@@ -1,171 +1,87 @@
-console.log('hi iam learning javascript😁')
+//empty array
 
-//identifier
+let myArray = [];
+console.log(myArray); // Array(0)
 
-let myname = "vyshnavi";
-console.log(myname);
+//with values
 
-//function
+let Array2 = [1,2,3,"hello",true];
+console.log(Array2);
 
-function Sum (a,b){
-    console.log(1+2);
+//looping array
+
+var arr = [1,2,3,4,5];
+
+for (let i =0;i < arr.length; i++){
+    console.log(arr[i]);
 }
 
-//single line comment
+//for each
 
-/*multi
-line 
-comment*/
+var arr = [1,2,3,4,5];
 
-//statement
+arr.forEach(function(item){
+    console.log(item + 10);
+});
 
-var x = 30;
+//push
+ var arr = [1,2,3]
+ var push = arr.push(6,7);
+ console.log(push);
+//pop
 
-if(x<20){
+let fruits = ['apple','banana','orange'];
+let finalFruits = fruits.pop();
+console.log(fruits);// removes orange
 
-    console.log("good evening");
-    console.log("dear");
-}else{
-    console.log("good night");
-}
+//unshift - adds begining of array
 
-//use strictmode
+let unshift = fruits.unshift('watermelon','papaya');
+console.log(fruits); // added to the list
 
+//shift - removes first element
 
-//if one statement throws error the remaining code will not execute
+let shiftedFruits = fruits.shift();
+console.log(fruits); //['papaya', 'apple', 'banana']
 
-/*
- let y;
-console.log(y);
-*/
-//with out strict it will work and not give error
+//join()
 
- let Z = 20;
- console.log(Z);
+const myString = fruits.join();
+console.log(myString); //papaya,apple,banana
 
-function z(p1,p2){
-    console.log(p2);
-}
+//concat()
 
-//operators
+ var newFruits = fruits.concat('grapes','mango');
+ console.log(newFruits); //['papaya', 'apple', 'banana', 'grapes', 'mango']
 
-console.log(typeof 1); //number
-console.log(typeof 'hello'); //string
-console.log(typeof 3.14); //number
-console.log(typeof {}); //object
-console.log(typeof []); //object
-console.log(typeof function(){});
-console.log(typeof null); // object
-console.log(typeof undefined); //undefined
+ // splice () -- extracts and returns a new array
+var slice = fruits.slice(0,2); 
+console.log(slice);
+console.log(fruits);
 
-//if-else
+//sort
 
-     x = -2;
+const numbers = [50,30,20,10,60,80,100,90];
+numbers.sort();
 
-     if (x >= 10){
-        console.log("x is greater than 10");
-     }else if (x < 0){
-        console.log("x is less than 0 and =10")
-     }else{
-        console.log("x is equal to zero");
-     }
-//ternary operator
+const ascending = (a,b) => a-b;
+console.log(numbers.sort(ascending));
 
-y = (2 > 5) ? console.log("true"): console.log("false");
+const Decending = (a,b) => b-a;
+console.log(numbers.sort(Decending));
 
-//loose equal
-//it checks value and automatically typeconversion takes place
+//reduce function
 
-console.log(1 ==1);
-console.log(2 == "two");
-console.log (0 == false);
+const Numbers = [1,2,3,4,5];
+const sum = Numbers.reduce((accumlator,currentValue)=>{
+    return accumlator + currentValue;
+},0); // accum value is 0
+console.log(sum);//added all numbers in a list
 
-//strict equal (===)
+//find function
 
-console.log("1"=== 1);
-console.log("hi"=="hello"); //type same but value not same
-console.log( false === false);
+var arr = [2,5,8,10];
 
-//dom
-
-var one = document.getElementById("one");
-
-// displaying the content inside the div
-let contents = one.innerHTML;
-console.log(contents);
-
-//changing the contents of div
-one.innerHTML = "<b>This is new content</b>"
-
-//attribute
-
-let myImage =document.getElementById("myImage");
-let srcValue = myImage.getAttribute("src");
-console.log(srcValue);
-
-//change artibute
-myImage.setAttribute("src","img.png");
-
-//style property
-// acessing from css
-// let one = document.getElementbyId("one");
-let bgcolor = one.style.backgroundColor;
-console.log(bgcolor);
-//we can change color
-one.style.backgroundColor = "orange";
-
-//text content
-//displaying the content
-let myPara = document.getElementById("mypara");
-let Contents = myPara.textContent;
-console.log(Contents);
-
-
-//SETS
-/*
- unlike arrays sets are not order and doesn't have indexes
-
-*/
-
-//creation of set
-
-/*
-const mySet = new Set([1,2,3,4,5]);
-console.log(mySet); 
-
-*/
-
-const mySet = new Set();
-
-mySet.add("A");
-mySet.add("B");
-mySet.add(1);
-console.log(mySet);
-console.log(mySet.size);
-console.log(mySet.has("B")); //true
-console.log(mySet.delete(1));
-console.log(mySet);//A,B
-
-//indexof
-
-const Two = ['vyshu','ruchi','amrin'];
-const index = Two.indexOf("ruchi");
-console.log(index);
-
-// print set of values
-
-const SetValues = new Set([11,12,13]);
-for(let value of SetValues){
-    console.log(value);
-}
-
-//convert set to array
-const Mset = new Set(['a','b','c','hurray']); //{}
-const Marr = [...Mset];
-console.log(Marr);//[]
-
-//alternate way
-
-const Nset = new Set(['apple','banana','orange'])
-const Narr = Array.from(Nset);
-console.log(Narr);
+const evenIndex = arr.findIndex((element)=> element % 2 === 0
+);
+console.log(evenIndex); //0 index
