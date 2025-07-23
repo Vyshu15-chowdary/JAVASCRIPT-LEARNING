@@ -31,3 +31,19 @@ function twoValues(){
 var result = twoValues();
 console.log(result[0]);//10
 console.log(result[1]);
+
+//using object
+
+function objValues(){
+    var x =30;
+    var y=40;
+
+    return{
+        a:x,
+        b:y
+    };
+}
+
+var result = objValues();
+console.log(result.a);
+console.log(result.b);
