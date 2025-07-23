@@ -18,3 +18,16 @@ Digits.reverse();
 const [four,three,two,one] = Digits;
 console.log(one);
 console.log(four);
+
+//return two values from function
+
+function twoValues(){
+    var x=10;
+    var y=20;
+
+    return [x,y];
+}
+
+var result = twoValues();
+console.log(result[0]);//10
+console.log(result[1]);
