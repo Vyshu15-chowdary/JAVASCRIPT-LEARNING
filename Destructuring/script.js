@@ -60,3 +60,9 @@ function deValues(){
 var [p,q] = deValues();
 console.log(p);
 console.log(q);
+
+//destructuring nested array
+
+const nestArr = [1,[2,3],[4,5[6,7]]];
+const [h,[i,j],[k,L,[m,n]]] = nestArr;
+console.log([h]);
