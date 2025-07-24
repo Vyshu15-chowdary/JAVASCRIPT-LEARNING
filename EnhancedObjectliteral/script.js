@@ -46,3 +46,17 @@ var obj = {
 };
 
 console.log(obj.foo); // Output: 'bar'
+
+//Computed property names can also be used to create objects with dynamic keys:
+
+function createObject(key,value){
+    return{
+        [key]:value
+    };
+}
+
+const obj1 = createObject('name','chowdary');
+const obj2 = createObject('age',23);
+
+console.log(obj1);
+console.log(obj2);
