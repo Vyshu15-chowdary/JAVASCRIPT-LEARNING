@@ -79,4 +79,18 @@ const country = optional?.address?.country;
 
 console.log(country); // insted of error we get undefined
 
+//check if method exist using opc
 
+const Myobj = {
+    foo :{
+        bar:()=>{
+            console.log("hello");
+        }
+    }
+};
+
+//optional chaining to check if method exists
+
+if(Myobj?.foo?.bar){
+    Myobj.foo.bar();
+}
