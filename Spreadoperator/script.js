@@ -42,3 +42,14 @@ console.log(originalArray);
 originalArray[2][0] = 5;
 console.log(originalArray);//effected
 console.log(copiedArray);//doesnt effect
+
+//Rest-parameter
+
+function add(...numbers){ //accepts indefinite of numbers
+    let total = 0;
+    for(const num of numbers){
+        total += num;
+    }
+    return total;
+}
+console.log(add(11,12,13));
