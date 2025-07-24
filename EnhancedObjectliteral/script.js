@@ -37,3 +37,12 @@ const user = {
 
 user.greet();
 console.log(user['vyshu_23']);
+
+//eol compute property name
+
+const key = 'foo';
+var obj = {
+  [key]: 'bar'
+};
+
+console.log(obj.foo); // Output: 'bar'
