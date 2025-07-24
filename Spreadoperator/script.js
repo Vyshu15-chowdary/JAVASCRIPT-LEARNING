@@ -31,3 +31,14 @@ var Shallowcopy = {...originalObj};
 originalObj.hobbies.push('coding');
 console.log(originalObj);
 console.log(Shallowcopy);
+
+//deep copy
+
+let originalArray = [1,2,[3,4]];
+let copiedArray = JSON.parse(JSON.stringify(originalArray));
+console.log(copiedArray);
+console.log(originalArray);
+
+originalArray[2][0] = 5;
+console.log(originalArray);//effected
+console.log(copiedArray);//doesnt effect
