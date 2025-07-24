@@ -139,3 +139,23 @@ performance.mark('end');
 //measure elapsed time
 performance.measure('code execution time','start','end');
 
+
+//COOKIES
+
+//creation of cookie
+
+document.cookie = "username=vyshu; expires = Thursday,24 july 2024 20:09:01 UTC; path= /";
+
+//to read the value of the username cookie
+
+let cookies = document.cookie.split(';');
+for(let i = 0; i < cookies.length; i++){
+    let cookie = cookies[i].trim();
+    if(cookie.startsWith("username =")){
+        let username = cookie.substring("username=".length,cookie.length);
+        console.log(username);
+        break;
+    }
+}
+console.log(cookies);
+
