@@ -67,3 +67,43 @@ console.log(Scwidth);//1536
 
 const ScolorDepth = window.screen.colorDepth;
 console.log(ScolorDepth); //24
+
+//Location object
+
+const currUrl = window.location.href;
+console.log(currUrl); //http://127.0.0.1:5500/BOM/index.html
+
+//change current url
+
+/*
+window.location.href = "http://127.0.0.1:5500/Map/index.html";
+
+*/
+
+//protocol of current url
+
+const protocol = window.location.protocol;
+console.log(protocol); //http
+
+//hostname of current url
+
+const hostName = window.location.hostname;
+console.log(hostName); //127.0.0.1
+
+//pathname of current url
+
+const pathName = window.location.pathName;
+console.log(pathName); //undefined //page.html
+
+//search string of curr url
+
+const search = window.location.search;
+console.log(search); // ?query = example
+
+//reload curr page
+
+
+const reload = window.location.reload();
+console.log(reload);
+
+
