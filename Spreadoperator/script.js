@@ -10,3 +10,11 @@ console.log(arr3);
 var obj1 ={a:1,b:2};
 var obj2 = {...obj1,c:3,d:4};
 console.log(obj2);
+
+//assign values in function
+
+function sum(a,b,c){
+    return a+b+c;
+}
+var numbers = [1,2,3];
+console.log(sum(...numbers));
