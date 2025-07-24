@@ -18,3 +18,16 @@ function sum(a,b,c){
 }
 var numbers = [1,2,3];
 console.log(sum(...numbers));
+
+//SHALLOW COPY
+
+var originalObj = {
+    name:"vyshu",
+    age:23,
+    hobbies:['music','movies']
+}
+
+var Shallowcopy = {...originalObj};
+originalObj.hobbies.push('coding');
+console.log(originalObj);
+console.log(Shallowcopy);
