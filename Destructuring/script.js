@@ -70,6 +70,7 @@ console.log([h]); */
 
 //set default values in destructuring
 
+/*
 let Person = {name:"vyshu"};
 let{name,age} = Person;
 console.log(age);//undefined
@@ -79,4 +80,22 @@ console.log(age);//undefined
 let personWithAge = {name:"rathod"};
 let{name:newName,ager = 25} =personWithAge;
 console.log(newName,ager);
+
+*/
+
+//destructuring objects
+
+const Human = {
+    name:'Alice',
+    age:25,
+    address:{
+        city:'NewYork',
+        state:'NY'
+    }
+};
+
+//Destructuring
+const{name,age,address:{city}} = Human;
+console.log(name);
+console.log(age);
 
