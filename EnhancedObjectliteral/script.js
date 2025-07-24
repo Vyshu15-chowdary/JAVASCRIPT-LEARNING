@@ -19,3 +19,21 @@ var obj ={
     y
 }
 console.log(obj);
+
+//with function
+
+var name = "vyshu";
+var age = 23;
+
+const user = {
+    name,
+    age,
+
+    greet(){
+        console.log(`hello  my name is ${this.name} and iam ${this.age} years old`)
+    },
+    [`${name}_${age}`]  : 'User'
+};
+
+user.greet();
+console.log(user['vyshu_23']);
