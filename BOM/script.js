@@ -159,3 +159,23 @@ for(let i = 0; i < cookies.length; i++){
 }
 console.log(cookies);
 
+//Localstorage
+
+//store data in local storage
+
+localStorage.setItem('username','Johnsmith');
+localStorage.setItem('email','john25@gmail.com');
+
+//retrive data from LS
+
+const username = localStorage.getItem('username');
+const email = localStorage.getItem('email');
+
+console.log(username);
+console.log(email);
+
+//remove data from LS
+localStorage.removeItem('username');
+localStorage.clear();
+
+
