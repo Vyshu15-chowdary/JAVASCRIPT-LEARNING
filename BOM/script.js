@@ -55,3 +55,15 @@ console.log(browserLang); //en-us
 //os of user
 const Os = nav.platform;
 console.log(Os); //win 32
+
+//screen object
+
+//width nd height of screen
+
+const Scwidth = window.screen.width;
+console.log(Scwidth);//1536
+
+//color depth of screen
+
+const ScolorDepth = window.screen.colorDepth;
+console.log(ScolorDepth); //24
