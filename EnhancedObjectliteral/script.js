@@ -94,3 +94,20 @@ const Myobj = {
 if(Myobj?.foo?.bar){
     Myobj.foo.bar();
 }
+
+//if array is empty or not
+
+const arr1 =[];
+const arr2 =[1,2,3];
+
+if(arr1?.length ===0){
+    console.log('array one is empty')
+}else{
+    console.log('array one is not empty')
+}
+
+if(arr2?.length === 0){
+    console.log('array 2 is empty');
+}else{
+    console.log('array 2 is not empty');
+}
