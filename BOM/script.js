@@ -102,8 +102,40 @@ console.log(search); // ?query = example
 
 //reload curr page
 
-
+/*
 const reload = window.location.reload();
 console.log(reload);
+*/
 
+
+//TIMING
+
+//start timer
+
+const StartTimer = window.performance.now();
+console.log(StartTimer); //1917.800000000745
+
+//Load page resources
+window.addEventListener('load',()=>{
+    //calculate page load time
+
+    const loadTime = window.performance.now() - StartTimer;
+    console.log(`page loaded in ${loadTime} milliseconds`); //page loaded in 18.100000001490116 milliseconds
+
+})
+
+//Mark the start time
+performance.mark('start') //page loaded in 17.5 milliseconds
+//execute some code
+
+for( let i=0; i<10000000; i++){
+
+    i = i+1;
+}
+
+//mark end time
+performance.mark('end');
+
+//measure elapsed time
+performance.measure('code execution time','start','end');
 
