@@ -63,6 +63,20 @@ console.log(q);
 
 //destructuring nested array
 
+/*
 const nestArr = [1,[2,3],[4,5[6,7]]];
 const [h,[i,j],[k,L,[m,n]]] = nestArr;
-console.log([h]);
+console.log([h]); */
+
+//set default values in destructuring
+
+let Person = {name:"vyshu"};
+let{name,age} = Person;
+console.log(age);//undefined
+
+//with default values
+
+let personWithAge = {name:"rathod"};
+let{name:newName,ager = 25} =personWithAge;
+console.log(newName,ager);
+
