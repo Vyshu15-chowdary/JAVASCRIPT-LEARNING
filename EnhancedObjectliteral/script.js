@@ -60,3 +60,23 @@ const obj2 = createObject('age',23);
 
 console.log(obj1);
 console.log(obj2);
+
+//optional chaining
+
+var optional= {
+
+    name :'john',
+    address:{
+        street:'523 main street',
+        city:'loss angels'
+    }
+
+};
+
+//accesing nested prop using optional chaining
+
+const country = optional?.address?.country;
+
+console.log(country); // insted of error we get undefined
+
+
