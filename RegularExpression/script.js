@@ -9,6 +9,11 @@ const regex2 = /world/; //literals are direct represantation of a value in sourc
 
 console.log(regex2.test("hello")); //false
 
+//matching sequence of series
+
+const regex3 = /\d+/;
+console.log(regex3.test("12345"));//true
+
 
 
 
