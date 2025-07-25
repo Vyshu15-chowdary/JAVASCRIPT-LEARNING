@@ -19,6 +19,11 @@ console.log(regex3.test("12345"));//true
 const regexp4 = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 console.log(regexp4.test("vishuchowdary20@gmail.com"));//tue
 
+//Replacing all occurences of a substring
+
+const regexp5 = /apple/g;
+const text = "i like apples , but not pineapples";
+console.log(text.replace(regexp5,"orange")); //i like oranges , but not pineoranges
 
 
 
