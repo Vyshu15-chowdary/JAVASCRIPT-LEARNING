@@ -14,6 +14,11 @@ console.log(regex2.test("hello")); //false
 const regex3 = /\d+/;
 console.log(regex3.test("12345"));//true
 
+//matching a valid emailaddress
+
+const regexp4 = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+console.log(regexp4.test("vishuchowdary20@gmail.com"));//tue
+
 
 
 
