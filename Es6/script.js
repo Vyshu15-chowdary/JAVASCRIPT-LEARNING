@@ -41,4 +41,21 @@ console.log(rectangle1.area); // logs 200
 rectangle1.height = 5;
 console.log(rectangle1.height); // logs 5
 
-rectangle1.width = 0; // throws an error
+//rectangle1.width = 0; // throws an error
+
+
+//how to use Es6
+
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  
+  sayHi() {
+    console.log(`Hi, my name is ${this.name} and I'm ${this.age} years old.`);
+  }
+}
+
+const john = new Person('John', 30);
+john.sayHi(); // logs "Hi, my name is John and I'm 30 years old."
